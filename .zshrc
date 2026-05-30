@@ -5,11 +5,10 @@
 #   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 # fi
 
-# ---------- CONFIGURATION LOADED INDICATOR ----------
-# This message appears when zshenv is loaded properly 
-# if [[ -t 1 ]]; then
-#     echo "\e[1;32m=== ZSH ENVIRONMENT WOOT LOADED SUCCESSFULLY ===\e[0m"
-# fi
+# Run Fastfetch on interactive shell startup
+if [[ -o interactive ]]; then
+    fastfetch
+fi
 
 # ===========================================================
 # History

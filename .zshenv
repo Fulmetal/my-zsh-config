@@ -33,3 +33,4 @@ export STARSHIP_CONFIG="$ZDOTDIR/starship.toml"
 # Personal binaries/scripts
 export PATH="$HOME/.local/bin:$PATH"
 
+. "$HOME/.cargo/env"
